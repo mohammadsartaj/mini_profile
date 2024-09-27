@@ -11,7 +11,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #5e63ba;
+  /* background-color: #5e63ba; */
+  background-image: linear-gradient(
+    to right top,
+    #c9fce9,
+    #aadcca,
+    #8bbcab,
+    #6e9e8d,
+    #518071
+  );
   font-family: "Poppins", system-ui;
 }
 
@@ -20,7 +28,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 9px 30px rgba(0, 0, 0, 1);
   border: 2px solid rgba(255, 255, 255, 0.3);
   padding: 30px;
   max-width: 350px;
@@ -106,6 +114,7 @@ body {
 }
 .social-links .btn.portfolio {
   background-color: #ff5722;
+  color: white;
 }
 
 .social-links .btn.portfolio:hover {
@@ -114,6 +123,7 @@ body {
 
 .social-links .btn.linkedin {
   background-color: #0077b5;
+  color: white;
 }
 
 .social-links .btn.linkedin:hover {
