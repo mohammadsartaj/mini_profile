@@ -65,27 +65,27 @@ body {
   display: inline-block;
   padding: 10px 15px;
   margin: 5px;
-  color: #fff; 
-  background-color: #007bff; 
-  border-radius: 5px; 
-  text-decoration: none; 
+  color: #fff; /* Text color */
+  background-color: #007bff; /* Button background color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
 }
-.btn .resume {
-  margin-left: 10px;
-}
-.btn:hover {
-  background-color: #0056b3; 
-
-.resume {
-  background-color: #28a745;
+.btn.resume {
   margin-left: 50px;
   margin-bottom: 15px;
 }
-
-.resume:hover {
-  background-color: #218838; 
+.btn:hover {
+  background-color: #0056b3; /* Darker background on hover */
 }
 
+.resume {
+  background-color: #28a745;
+  /* Different color for resume button */
+}
+
+.resume:hover {
+  background-color: #218838; /* Darker green on hover */
+}
 
 .social-links {
   display: flex;
