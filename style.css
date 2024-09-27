@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #5e63ba;
+  font-family: "Poppins", system-ui;
+}
+
+/* Profile card styling */
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.profile-card .profile-image {
+  margin-bottom: 15px;
+  margin-left: 25%;
+}
+
+.profile-card .profile-image img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.profile-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.profile-card .about {
+  font-size: 16px;
+  color: #312e2e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-card .social-links a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.profile-card .social-links a:hover {
+  color: #0077b5; /* Change hover color */
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+}
+
+.social-links .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px; /* Controls button width */
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px; /* Rounded border */
+  transition: background-color 0.3s ease;
+}
+.social-links .btn i {
+  margin-right: 10px;
+  color: white;
+}
+
+.social-links .btn.github {
+  background-color: #333;
+  color: white;
+}
+
+.social-links .btn.github:hover {
+  background-color: #444;
+}
+.social-links .btn.portfolio {
+  background-color: #ff5722;
+}
+
+.social-links .btn.portfolio:hover {
+  background-color: #e64a19;
+}
+
+.social-links .btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-links .btn.linkedin:hover {
+  background-color: #005582;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-card .about {
+    font-size: 14px;
+  }
+  .social-links .btn {
+    max-width: 90%;
+  }
+
+  .profile-card .social-links a {
+    font-size: 20px;
+  }
+}
